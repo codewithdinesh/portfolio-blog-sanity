@@ -5,13 +5,12 @@ import Script from "next/script";
 import Link from "next/link";
 
 import { createClient } from "next-sanity";
-import PortableText from "react-portable-text"
 
 import imageUrlBuilder from '@sanity/image-url'
-import NavBar from '../components/NavBar';
 
 
 import moment from "moment"
+import Navbar from '../components/navbar';
 
 
 
@@ -88,7 +87,7 @@ export default function Home({ blogs, profile }) {
         {/* Script Load */}
         <Script src="/assets/js/main.js"></Script>
 
-        <NavBar />
+        <Navbar/>
 
 
         <div>

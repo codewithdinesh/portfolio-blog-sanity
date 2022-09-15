@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 
 
-const NavBar = ({ profile }) => {
+const Navbar= ({ profile }) => {
 
   const [navbar, setNavbar] = useState(false);
 
@@ -89,4 +89,4 @@ const NavBar = ({ profile }) => {
   )
 }
 
-export default NavBar;
+export default Navbar;

@@ -2,13 +2,13 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import { createClient } from "next-sanity";
 import PortableText from "react-portable-text"
-import NavBar from '../../components/navbar';
 
 import imageUrlBuilder from '@sanity/image-url'
 
 // date formating import
 import moment from "moment"
 import Link from 'next/link';
+import Navbar from '../../components/navbar';
 
 const Post = ({ blog, profile }) => {
     const router = useRouter()
@@ -80,7 +80,7 @@ const Post = ({ blog, profile }) => {
 
 
         </Head>
-        <NavBar profile={profile} />
+        <Navbar profile={profile} />
 
         <div className='mt-10'>
             <div className="container py-6 md:py-10">
@@ -127,15 +127,22 @@ const Post = ({ blog, profile }) => {
                     {/* navigation */}
                     <div className="mt-10 flex justify-between border-t border-lila py-12">
                         <Link href="/" className="flex items-center">
-                            <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
-                            <span
-                                className="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous
-                                Post</span>
+                            <div>
+                                <i className="bx bx-left-arrow-alt text-2xl text-primary"></i>
+                                <span
+                                    className="block pl-2 font-body text-lg font-bold uppercase text-primary md:pl-5">Previous
+                                    Post</span>
+
+                            </div>
                         </Link>
                         <Link href="/" className="flex items-center">
-                            <span className="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next
-                                Post</span>
-                            <i className="bx bx-right-arrow-alt text-2xl text-primary"></i>
+
+                            <div>
+                                <span className="block pr-2 font-body text-lg font-bold uppercase text-primary md:pr-5">Next
+                                    Post</span>
+
+                                <i className="bx bx-right-arrow-alt text-2xl text-primary"></i>
+                            </div>
                         </Link>
                     </div>
 

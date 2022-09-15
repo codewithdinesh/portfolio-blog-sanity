@@ -4,7 +4,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 
 import imageUrlBuilder from '@sanity/image-url'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/navbar'
 import Script from 'next/script'
 import Head from 'next/head'
 
