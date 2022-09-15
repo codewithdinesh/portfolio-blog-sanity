@@ -18,8 +18,8 @@ import moment from "moment"
 export default function Home({ blogs, profile }) {
 
   const client = createClient({
-    projectId: "7ncnu8yj",
-    dataset: "production",
+    projectId: `${process.env.SANITY_PROJECT_ID}`,
+    dataset: `${process.env.SANITY_CONFIG}`,
     useCdn: false
   });
 
@@ -52,7 +52,7 @@ export default function Home({ blogs, profile }) {
 
         <meta name="robots" content="index, follow" />
 
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 
         <meta name="dinesh"
           content="Full stack Web developer" />
@@ -532,8 +532,8 @@ export default function Home({ blogs, profile }) {
 export async function getServerSideProps(context) {
 
   const client = createClient({
-    projectId: "7ncnu8yj",
-    dataset: "production",
+    projectId: `${process.env.SANITY_PROJECT_ID}`,
+    dataset: `${process.env.SANITY_CONFIG}`,
     useCdn: false
   });
 

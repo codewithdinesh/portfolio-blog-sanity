@@ -1,8 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 ## Getting Started
 
-First, run the development server:
+First, Add values in `.env`
+
+```SANITY_PROJECT_ID=
+SANITY_ID=
+SANITY_CONFIG=
+
+```
+
+
+run the development server:
 
 ```bash
 npm run dev

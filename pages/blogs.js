@@ -12,10 +12,9 @@ import Head from 'next/head'
 
 const Blogs = ({ blogs, profile }) => {
 
-
     const client = createClient({
-        projectId: "7ncnu8yj",
-        dataset: "production",
+        projectId: `${process.env.SANITY_PROJECT_ID}`,
+        dataset: `${process.env.SANITY_CONFIG}`,
         useCdn: false
     });
 
@@ -101,7 +100,7 @@ const Blogs = ({ blogs, profile }) => {
                                     <div>
 
                                         <div style={{ backgroundImage: `url(${builder.image(e.mainImage).url() || '/assets/img/post-03.png'})` }}
-                                            className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
+                                            className="group relative h-72 bg-contain bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72">
 
                                             <span
                                                 className="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50cursor-pointer"></span>
@@ -135,8 +134,8 @@ export default Blogs;
 export async function getServerSideProps(context) {
 
     const client = createClient({
-        projectId: "7ncnu8yj",
-        dataset: "production",
+        projectId: `${process.env.SANITY_PROJECT_ID}`,
+        dataset: `${process.env.SANITY_CONFIG}`,
         useCdn: false
     });
 
