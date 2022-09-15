@@ -4,7 +4,8 @@
 
 First, Add values in `.env`
 
-```SANITY_PROJECT_ID=
+```
+SANITY_PROJECT_ID=
 SANITY_ID=
 SANITY_CONFIG=
 
