@@ -70,9 +70,9 @@ const Blogs = ({ blogs, profile }) => {
 
                 <link crossOrigin="anonymous" href="/assets/styles/main.min.css" media="screen" rel="stylesheet" />
 
-                <Script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></Script>
+                <script defer src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"></script>
 
-                <Script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></Script>
+                <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 
             </Head>

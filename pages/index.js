@@ -109,13 +109,13 @@ export default function Home({ blogs, profile }) {
 
                   {/* Name */}
                   <h1 className="text-center font-header text-4xl text-white sm:text-left sm:text-5xl md:text-6xl">
-                    Hello I'm Dinesh Rathod
+                    Hello I&apos;m Dinesh Rathod
                   </h1>
 
                   {/* Links */}
                   <div className="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start">
                     <div className="flex items-center justify-center pl-0 sm:justify-start md:pl-1">
-                      <p className="font-body text-lg uppercase text-white">Let's connect</p>
+                      <p className="font-body text-lg uppercase text-white">Let&apos;s connect</p>
                       <div className="hidden sm:block">
                         <i className="bx bx-chevron-right text-3xl text-yellow"></i>
                       </div>
@@ -150,7 +150,7 @@ export default function Home({ blogs, profile }) {
                   Who am I?
                 </h2>
                 <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-                  I'm Dinesh Rathod, a Full stack Web Developer & Android Developer
+                  I&apos;m Dinesh Rathod, a Full stack Web Developer & Android Developer
                 </h4>
                 <p className="pt-6 font-body leading-relaxed text-grey-20">
                   Extremely driven to develop my skills and grow professionally.
@@ -334,7 +334,7 @@ export default function Home({ blogs, profile }) {
               Check out my Portfolio
             </h2>
             <h3 className="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
-              Here's what I have done!
+              Here&apos;s what I have done!
             </h3>
 
             <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
@@ -530,6 +530,9 @@ export default function Home({ blogs, profile }) {
 }
 
 export async function getServerSideProps(context) {
+
+
+  // await console.log(`Env: ${process.env.SANITY_PROJECT_ID}`)
 
   const client = createClient({
     projectId: `${process.env.SANITY_PROJECT_ID}`,

@@ -65,20 +65,20 @@ const NavBar = ({ profile }) => {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-gray-900  hover:text-blue-900">
-                  <a href="/#about">About me</a>
+                  <Link href="/#about">About me</Link>
                 </li>
 
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="/#skills">Skills</a>
+                  <Link href="/#skills">Skills</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="/#project">Projects</a>
+                  <Link href="/#project">Projects</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="/#blog">Blog</a>
+                  <Link href="/#blog">Blog</Link>
                 </li>
                 <li className="text-gray-600 hover:text-blue-600">
-                  <a href="/#contact">Contact Me</a>
+                  <Link href="/#contact">Contact Me</Link>
                 </li>
               </ul>
             </div>
